@@ -40,10 +40,8 @@ html {
 
 body{
 	height: 100vh;
-	background: url(img/banner1.jpg);
 	background-position: center;
-	background-size: cover;
-	
+	background-size: cover;	
 }
 
 section {
@@ -127,6 +125,12 @@ h3 { font-size: var--(fs-h3) }
 
 
 /*header*/
+#container {
+	background: url(img/banner1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -353,11 +357,11 @@ header {
 }
 
 .about-me {
-     max-width: 1000px;
-     margin: 0 auto;
+     
+     
+	background-size: cover;
+	background: url(img/banner1.jpg);
 }
-
-
 
 @media (min-width: 600px) {
 	.about-me {
@@ -490,4 +494,4 @@ header {
  
 .portfolio-item img{
 	height: 30em;
-}
+}*/
