@@ -358,7 +358,7 @@ header {
 
 .about-me {
      
-     
+    background: url(img/banner1.jpg);
 	background-size: cover;
 	background: url(img/banner1.jpg);
 }
@@ -415,6 +415,7 @@ header {
 .portfolio {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));	
+	grid-gap: 2rem;
 
 }
 
@@ -429,9 +430,11 @@ header {
 	  opacity 250ms linear;
 }
 
-.portfolio__image:hover {
-	transform: scale(1.2);
-	opacity: .75;
+.portfolio h2 {
+	text-align: center;
+	color: #000;
+	font-family: 'Acme', sans-serif;
+	margin-bottom: 1rem;
 }
 
 
