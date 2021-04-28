@@ -66,6 +66,7 @@ strong { font-weight: var(--fw-bold) }
     color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
+    text-align: center;
     font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -489,7 +490,7 @@ header {
 
 /*responsiveness*/
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
 	.services {
 		display: flex;
 		max-width: 1000px;
@@ -503,7 +504,7 @@ header {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 	
 
 	.services {
@@ -524,13 +525,13 @@ header {
 
 }
 
-@media (min-width: 480px) {
+@media (min-width: 380px) {
 	.social-list__item {
 	width: 60px;
 	height: 60px;
     }
     
-    .about-me h2, h3 {
+    .about-me {
     	text-align: center;
     }
 
