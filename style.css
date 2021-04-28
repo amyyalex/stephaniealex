@@ -143,14 +143,13 @@ header {
 
 .nav {
 	position: fixed;
-	background: url(img/banner1.jpg);
+	background: url(img/about.jpg);
 	color: var(--clr-light);
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	z-index: 100;
-
 	transform: translateX(100%);
 	transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -343,49 +342,22 @@ header {
 	width: 50px;
 }
 
-@media (min-width: 800px) {
-	.services {
-		display: flex;
-		max-width: 1000px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+/*about me*/
 
-	.service + .service {
-		margin-left: 2em; 
-	}
-}
-
-.about-me {
-     
-    background: url(img/banner1.jpg);
+.about-me { 
+    background: url(img/about.jpg);
 	background-size: cover;
-	background: url(img/banner1.jpg);
 }
 
-@media (min-width: 600px) {
-	.about-me {
-		display: grid;
-		grid-template-columns: 1fr 200px;
-		grid-template-areas: 
-		  "title img"
-		  "subtitle img"
-		  "text img";
-		grid-column-gap: 2em;
-	}
-
-	.section__title--about {
+.section__title--about {
 		font-size: 300%;
 		font-family: 'Acme', sans-serif;
 		
 	}
-    .section__subtitle--about {
-		grid-column: 1 / -1;
-		position: relative;
-	}
 
-	
-	
+.about-me__body p {
+	font-weight: 300;
+	font-size: 130%;
 }
 
 /*my work*/
@@ -419,6 +391,13 @@ header {
 
 }
 
+.portfolio1, 
+.portfolio2, 
+.portfolio3, 
+.portfolio5 {
+	box-shadow: 5px 5px 10px #bbb;
+}
+
 .portfolio__item {
 	background: var(--clr-accent);
     overflow: hidden;
@@ -443,7 +422,7 @@ header {
 .footer {
 	background: url(img/banner2.jpg);
 	text-align: center;
-	padding: 2em 0;
+	padding: 1em 0;
 	font-size: var(--fs-h3);
 }
 
@@ -469,7 +448,7 @@ header {
 	list-style: none;
 	display: flex;
 	justify-content: center;
-	margin: 2em 0;
+	margin: 1em 0;
 	padding: 0;
 }
 
@@ -488,6 +467,61 @@ header {
 .social-list__link {
 	padding: .5em;
 }
+
+/*responsiveness*/
+
+@media (min-width: 800px) {
+	.services {
+		display: flex;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.service + .service {
+		margin-left: 2em; 
+	}
+}
+
+
+@media (min-width: 600px) {
+	.about-me {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		  "title img"
+		  "subtitle img"
+		  "text img";
+		grid-column-gap: 2em;
+	}
+
+	
+    .section__subtitle--about {
+		grid-column: 1 / -1;
+		position: relative;
+	}
+
+	.services {
+		display: flex;
+		max-width: 100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.social-list__item {
+	margin: 0 .5em;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	border-radius: 30px;
+	background: url(img/banner1.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+}
+
 
 /*.portfolio-item {
 	padding: 0 2em 2em;
