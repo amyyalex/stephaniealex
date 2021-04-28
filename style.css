@@ -41,7 +41,8 @@ html {
 body{
 	height: 100vh;
 	background-position: center;
-	background-size: cover;	
+	background-size: auto;	
+	background: #f5f5f5;
 }
 
 section {
@@ -129,6 +130,7 @@ h3 { font-size: var--(fs-h3) }
 	background: url(img/banner1.jpg);
 	background-position: center;
 	background-size: cover;
+	box-shadow: 5px 5px 10px #bbb;
 }
 
 header {
@@ -284,10 +286,8 @@ header {
 /*service section*/
 
 .my-services {
-	background-image: url(img/banner2.jpg);
-	background-size: cover;
-	
 	text-align: center;
+	box-shadow: 5px 5px 10px #bbb;
 }
 
 .section__title--services {
@@ -344,9 +344,8 @@ header {
 
 /*about me*/
 
-.about-me { 
-    background: url(img/about.jpg);
-	background-size: cover;
+.about-me {
+	box-shadow: 5px 5px 10px #bbb;
 }
 
 .section__title--about {
@@ -356,15 +355,15 @@ header {
 	}
 
 .about-me__body p {
+	
 	font-weight: 300;
 	font-size: 130%;
 }
 
+
 /*my work*/
 
 .my-work {
-	background-image: url(img/banner2.jpg);
-	background-size: cover;
 	background-blend-mode: multiply;
 	color: var(--clr-light);
 	text-align: center;
@@ -421,6 +420,7 @@ header {
 
 .footer {
 	background: url(img/banner2.jpg);
+	background-size: cover;
 	text-align: center;
 	padding: 1em 0;
 	font-size: var(--fs-h3);
@@ -509,16 +509,21 @@ header {
 	}
 	
 	.social-list__item {
-	margin: 0 .5em;
 	width: 60px;
 	height: 60px;
-	position: relative;
-	border-radius: 30px;
-	background: url(img/banner1.jpg);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    }
+
+    .about-me {
+    	text-align: center;
+    }
+
 }
+
+@media (min-width: 480px) {
+	.social-list__item {
+	width: 60px;
+	height: 60px;
+    }
 
 }
 
